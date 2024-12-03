@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "Hello :)" # can change this to your name
+
+  page-footer:
+    left: "&copy; Copyright 2022, Author"
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+
+  navbar:
+    left:
+      - href: index.qmd #building content on the Home screen
+        text: Home
+
+      - href: projects/index.qmd # projects tab is it's own folder with it's own index.qmd
+        text: Projects
+
+      - href: about.qmd # this is where we have education, etc.
+        text: About
+
+format:
+  html:
+    theme: darkly # this is the theme, you can google quarto html themes
+    css: styles.css # the default is empty, you can customize
+    toc: true
+
+
+
